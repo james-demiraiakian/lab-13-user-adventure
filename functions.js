@@ -21,3 +21,7 @@ export function setChar(charObject) {
     const charString = JSON.stringify(charObject);
     localStorage.setItem('CHAR', charString);
 }
+
+export function getChar() {
+    return JSON.parse(localStorage.getItem('CHAR'));
+}

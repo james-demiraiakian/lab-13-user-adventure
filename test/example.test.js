@@ -1,10 +1,10 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
-import { generateChar } from '../functions.js';
+import { generateChar, setChar } from '../functions.js';
 
 const test = QUnit.test;
 
-test('gen char', (expect) => {
+test('generateChar', (expect) => {
     //Arrange
     // Set up your arguments and expectations
     const expected = {
@@ -30,4 +30,19 @@ test('gen char', (expect) => {
     expect.deepEqual(actual, expected);
 });
 
+test('setChar', (expect) => {
+    const expected = {
+        completed: {},
+        hp: 45,
+        gold: 0,
+        name: 'jimmothy',
+        class: 'ranger',
+        race: 'elf'
+    };
 
+    setChar(expected);
+
+    const actual = JSON.parse(localStorage.getItem('CHAR'));
+
+    expect.deepEqual(actual, expected);
+});

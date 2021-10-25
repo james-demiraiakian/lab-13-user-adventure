@@ -16,3 +16,8 @@ export function generateChar(formData) {
         race: formData.get('race'),
     };
 }
+
+export function setChar(charObject) {
+    const charString = JSON.stringify(charObject);
+    localStorage.setItem('CHAR', charString);
+}

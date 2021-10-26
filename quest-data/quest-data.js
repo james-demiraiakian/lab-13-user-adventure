@@ -3,28 +3,28 @@ const undeadParish = {
     title: 'The Undead Parish',
     map: {},
     image: '../assets/undead-parish.jpg',
-    description: 'description of undead parish to come',
+    description: 'As you enter the Undead Parish, you see ',
     choices: [
         {
             id: 'thing1',
             description: 'Thing one that you can do',
             result: 'thing 1 happens',
             hp: '100',
-            gold: '50',
+            souls: '50',
         },
         {
             id: 'thing2',
             description: 'thing 2 that you can do',
             result: 'thing 2 happens',
             hp: '50',
-            gold: '100',
+            souls: '100',
         },
         {
             id: 'thing3',
             description: 'thing 3 that you can do',
             result: 'thing 3 happens',
             hp: '75',
-            gold: '75',
+            souls: '75',
         }
     ]
 };
@@ -41,21 +41,21 @@ const anorLondo = {
             description: '',
             result: '',
             hp: '',
-            gold: '',
+            souls: '',
         },
         {
             id: '',
             description: '',
             result: '',
             hp: '',
-            gold: '',
+            souls: '',
         },
         {
             id: '',
             description: '',
             result: '',
             hp: '',
-            gold: '',
+            souls: '',
         }
     ]
 };
@@ -72,21 +72,21 @@ const theDukesArchives = {
             description: '',
             result: '',
             hp: '',
-            gold: '',
+            souls: '',
         },
         {
             id: '',
             description: '',
             result: '',
             hp: '',
-            gold: '',
+            souls: '',
         },
         {
             id: '',
             description: '',
             result: '',
             hp: '',
-            gold: '',
+            souls: '',
         }
     ]
 };
@@ -103,21 +103,21 @@ const catacombs = {
             description: '',
             result: '',
             hp: '',
-            gold: '',
+            souls: '',
         },
         {
             id: '',
             description: '',
             result: '',
             hp: '',
-            gold: '',
+            souls: '',
         },
         {
             id: '',
             description: '',
             result: '',
             hp: '',
-            gold: '',
+            souls: '',
         }
     ]
 };
@@ -134,21 +134,21 @@ const kilnOfTheFirstFlame = {
             description: '',
             result: '',
             hp: '',
-            gold: '',
+            souls: '',
         },
         {
             id: '',
             description: '',
             result: '',
             hp: '',
-            gold: '',
+            souls: '',
         },
         {
             id: '',
             description: '',
             result: '',
             hp: '',
-            gold: '',
+            souls: '',
         }
     ]
 };

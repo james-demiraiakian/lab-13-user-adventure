@@ -1,5 +1,5 @@
 import quests from '../quest-data/quest-data.js';
-import { findByID, getChar, setChar } from '../functions.js';
+import { findByID, getChar, setChar, questScore } from '../functions.js';
 
 const parameters = new URLSearchParams(window.location.search);
 
@@ -48,7 +48,7 @@ questChoices.addEventListener('submit', (e) => {
     questScore(choice, questData.id, player);
     setChar(player);
     const questDetails = document.getElementById('quest-details');
-    questDetails.classList.add('hidden');
+    // questDetails.classList.add('hidden');
     const questResult = document.getElementById('result');
     const resultPar = document.createElement('p');
     resultPar.textContent = choice.result;

@@ -1,6 +1,6 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
-import { generateChar, setChar } from '../functions.js';
+import { generateChar, questScore, setChar } from '../functions.js';
 
 const test = QUnit.test;
 
@@ -10,7 +10,7 @@ test('generateChar', (expect) => {
     const expected = {
         completed: {},
         hp: 45,
-        gold: 0,
+        souls: 0,
         name: 'jimmothy',
         class: 'ranger',
         race: 'elf'
@@ -34,7 +34,7 @@ test('setChar', (expect) => {
     const expected = {
         completed: {},
         hp: 45,
-        gold: 0,
+        souls: 0,
         name: 'jimmothy',
         class: 'ranger',
         race: 'elf'
@@ -45,4 +45,34 @@ test('setChar', (expect) => {
     const actual = JSON.parse(localStorage.getItem('CHAR'));
 
     expect.deepEqual(actual, expected);
+});
+
+test('scoreQuest', (expect)=>{
+    // arrange
+    const userObject = { 
+        completed: {},
+        souls: 0,
+        hp: 45,
+        name: 'Craboline',
+        race: '',
+        class: '',
+    };
+    const choiceObject = {
+        id: 'run',
+        description: 'Get the hell out of the village',
+        result: ``,
+        hp: -35,
+        souls: 15
+    };
+    const questId = 'undeadParish';
+
+    // act
+
+    questScore(choiceObject, questId, userObject);
+
+    // assert
+    expect.equal(userObject.hp, 10);
+    expect.equal(userObject.souls, 15);
+    expect.equal(userObject.completed[questId], true);
+
 });

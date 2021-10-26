@@ -44,12 +44,11 @@ questChoices.addEventListener('submit', (e) => {
     const chosenRadio = document.querySelector('input[type="radio"]:checked');
     const choice = findByID(chosenRadio.value, questData.choices);
     const player = getChar();
-    console.log(choice);
 
-    // questScore(choice, questData.id, player);
+    questScore(choice, questData.id, player);
     setChar(player);
-    // const questDetails = document.getElementById('quest-details');
-    // questDetails.classList.add('hidden');
+    const questDetails = document.getElementById('quest-details');
+    questDetails.classList.add('hidden');
     const questResult = document.getElementById('result');
     const resultPar = document.createElement('p');
     resultPar.textContent = choice.result;
@@ -57,5 +56,5 @@ questChoices.addEventListener('submit', (e) => {
     homeLink.href = '../map';
     homeLink.textContent = 'Return to Firelink Shrine';
     questResult.append(resultPar, homeLink);
-    // questResult.classList.remove('hidden');
+    questResult.classList.remove('hidden');
 });

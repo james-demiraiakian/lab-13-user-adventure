@@ -1,1 +1,20 @@
-/* add home page styles here */
+#body {
+    background-image: url("../assets/title-background.jpg");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: rgb(199, 169, 0);
+    font-size: 1.3rem;
+}
+
+h1 {
+    color: grey;
+    font-size: 4rem;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+}

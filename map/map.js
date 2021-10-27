@@ -1,8 +1,10 @@
 import quests from '../quest-data/quest-data.js';
-import { getChar, allQuestFin } from '../functions.js';
+import { getChar, allQuestFin, loadProfile } from '../functions.js';
 
 const questLinks = document.getElementById('quest-links');
 const player = getChar();
+
+loadProfile();
 
 if (player.hp <= 0 || allQuestFin(player)) {
     window.location.replace('../gameover');

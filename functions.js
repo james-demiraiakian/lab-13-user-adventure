@@ -29,7 +29,7 @@ export function getChar() {
 }
 
 export function questScore(choiceObj, questID, userObj) {
-    userObj.souls = choiceObj.souls;
+    userObj.souls += choiceObj.souls;
     userObj.hp += choiceObj.hp;
     userObj.completed[questID] = true;
 }
@@ -41,4 +41,16 @@ export function allQuestFin(userObject){
         }
     }
     return true;
+}
+
+export function loadProfile(){
+    const user = getChar();
+    const img = document.getElementById('class-image');
+    img.src = `../assets/${user.class}.jpg`;
+    const name = document.getElementById('name');
+    name.textContent = user.name;
+    const souls = document.getElementById('souls');
+    souls.textContent = user.souls;
+    const hp = document.getElementById('hp');
+    hp.textContent = user.hp;
 }

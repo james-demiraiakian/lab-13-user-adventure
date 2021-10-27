@@ -1,1 +1,11 @@
-/* add home page styles here */
+#body {
+    background-image: url("./assets/title-background.jpg");
+    display: flex;
+    flex-direction: column;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+}

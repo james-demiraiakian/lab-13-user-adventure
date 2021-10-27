@@ -14,15 +14,23 @@
     <title>Dark Souls Quest</title>
 </head>
 
-<body>
-    <header>
+<body id="body">
+    <header id="header">
         <h1 id="title">Dark Souls</h1>
-        <p id="description">This is for a paragraph of description</p>
+        <p id="description">
+            In the Age of Ancients the world was unformed, shrouded by fog. A land of gray crags, Archtrees and Everlasting Dragons. But then there was Fire and with fire came disparity. Heat and cold, life and death, and of course, light and dark. Then from the dark, They came, and found the Souls of Lords within the flame. Nito, the First of the Dead, The Witch of Izalith and her Daughters of Chaos, Gwyn, the Lord of Sunlight, and his faithful knights. And the Furtive Pygmy, so easily forgotten
+            <br><br>
+            With the strength of Lords, they challenged the Dragons. Gwyn's mighty bolts peeled apart their stone scales. The Witches weaved great firestorms. Nito unleashed a miasma of death and disease. And Seath the Scaleless betrayed his own, and the Dragons were no more.
+            <br><br>
+            Thus began the Age of Fire. But soon the flames will fade and only Dark will remain. Even now there are only embers, and man sees not light, but only endless nights. And amongst the living are seen, carriers of the accursed Darksign.
+            <br><br>
+            Yes, indeed. The Darksign brands the Undead. And in this land, the Undead are corralled and led to the north, where they are locked away, to await the end of the world... This is your fate.</p>
     </header>
+
     <main>
         <form action="submit" id="char-select-form">
-            <input type="text" name="name" id="name">
-            <div id="race">
+            <input type="text" name="name" id="name" placeholder="Name">
+            <div id="race">Race <br>
                 <label for="astora"> Astora
                     <input type="radio" name="race" required value="astora">
                 </label>
@@ -36,7 +44,7 @@
                     <input type="radio" name="race" required value="irithyll">
                 </label>
             </div>
-            <div id="class">
+            <div id="class">Class <br>
                 <label for="warrior"> Warrior
                     <input type="radio" name="class" required value="warrior">
                 </label>

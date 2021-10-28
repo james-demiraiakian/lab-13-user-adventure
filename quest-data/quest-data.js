@@ -9,14 +9,14 @@ const undeadParish = {
             id: 'ringBell',
             description: 'Ring the bell at the top of the parishs tallest tower?',
             result: 'As you may your way through the Parish, you encounter the Bell Gargoyle on the roof. A long, frantic battle ensues, and though you take some hits, you manage to slay the enemy. You climb the tower and ring the bell, before making your way back to Firelink Shrine',
-            hp: -15,
+            hp: -10,
             souls: +100,
         },
         {
             id: 'blacksmith',
             description: 'Visit the Blacksmith to upgrade your weapon?',
             result: 'You make your way towards the blacksmith, encountering a few smaller enemies along the way. Once there, you are able to sellsome of the items you have looted along the way, covering the cost of upgrading your weapon. Before you leave, you rest at a nearby bonfire to recover your strength, then head back to Firelink Shrine',
-            hp: +20,
+            hp: +25,
             souls: +0,
         },
         {
@@ -24,7 +24,7 @@ const undeadParish = {
             description: 'Fight the boar at the front of the parish',
             result: "You charege the boar, hoping to take it down. However, you quickly realize that with it's thick hide, armor plated head, and razer sharp tusks, this will not be an easy fight. You manage to finally bring it down, but not before taking wounds, some serious.",
             hp: -60,
-            souls: +50,
+            souls: +300,
         }
     ]
 };
@@ -55,7 +55,7 @@ const anorLondo = {
             description: 'Enter the Chapel?',
             result: 'You enter the Chapel, crossing the rafters before climbing down a lader to the ground floor. On the back wall you see a large painting of a snowbound castle on the peak of a mountain. You touch the painting, only to be drawn in and trapped. You eventually encounter and fight the Crossbreed Priscilla. After great effort, you finally manage to bring her down, opening the way out and allowing you to limp back out.',
             hp: -50,
-            souls: +300,
+            souls: +400,
         }
     ]
 };
@@ -79,7 +79,7 @@ const theDukesArchives = {
             description: 'Enter the prison?',
             result: 'You enter the prison, where Seath has many guards, and even the crazed prisoners are hostile. After spending what feels like days fighting through, you finally manage to drag yourself out.',
             hp: -60,
-            souls: +280,
+            souls: +380,
         },
         {
             id: 'archive',
@@ -103,7 +103,7 @@ const catacombs = {
             description: 'Visit the man by the pit?',
             result: 'You walk up to the man and speak with him. He seems unhinged as you converse. Finally, he asks you to gaze into the pit, asking what you see. As you squint into the darkness, he suddenly kicks you, sending you hurtling into the blackness.',
             hp: -60,
-            souls: +290,
+            souls: +390,
         },
         {
             id: 'cave',

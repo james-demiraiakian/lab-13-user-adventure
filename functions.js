@@ -50,7 +50,7 @@ export function loadProfile(){
     const name = document.getElementById('name');
     name.textContent = user.name;
     const souls = document.getElementById('souls');
-    souls.textContent = user.souls;
+    souls.textContent = `Souls: ${user.souls}`;
     const hp = document.getElementById('hp');
-    hp.textContent = user.hp;
+    hp.textContent = `HP: ${user.hp}`;
 }

@@ -29,11 +29,13 @@ function displayLink(quest) {
     const a = document.createElement('a');
     a.href = `../quests/?id=${quest.id}`;
     a.textContent = quest.title;
+    a.classList.add('map-links');
     questLinks.appendChild(a);
 }
 
 function displaySpan(quest){
     const span = document.createElement('span');
     span.textContent = quest.title;
+    span.classList.add('map-spans');
     questLinks.appendChild(span);
 }

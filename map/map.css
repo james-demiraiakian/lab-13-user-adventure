@@ -1,0 +1,50 @@
+body {
+    background-image: url('../assets/firelink.png');
+    background-size: cover;
+    background-position: unset;
+    background-repeat: no-repeat;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-left: 44vw;
+}
+
+#profile {
+    display: flex;
+    position: relative;
+    font-size: 2rem;
+    width: 15vw;
+    justify-content: space-between;
+}
+
+#class-image {
+    width: 5vw;
+}
+
+#quest-links {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20vw;
+}
+
+.map-links {
+    color: rgb(255, 255, 255);
+    margin: 2vw;
+    font-size: 1.5rem;
+}
+
+.map-spans {
+    color: rgb(255, 174, 0);
+    margin: 2vw;
+    font-size: 1.5rem;
+}

@@ -5,7 +5,7 @@ function scoreSouls(souls) {
     if (souls <= 300) {
         wealth = 'poor';
         return wealth;
-    } else if (300 < souls <= 500) {
+    } else if (300 < souls && souls <= 500) {
         wealth = 'mid';
         return wealth;
     } else {
@@ -13,7 +13,6 @@ function scoreSouls(souls) {
         return wealth;
     }
 }
-
 
 function scoreHp(hp) {
     if (hp <= 0) {
@@ -25,7 +24,7 @@ function scoreHp(hp) {
 
 const aliveSouls = {
     poor: 'He survived, but with what remains of his frail, pitiful soul, what he had could hardly be considered life, but just existance.',
-    mid: 'He survived, with an average soul. After all is done, he lived a modest life, and was soon forgotten at the end.',
+    mid: 'He survived, with an average soul. After all was done, he lived a modest life, and was soon forgotten at the end.',
     rich: 'He survived with a truely glorious soul, allowing him to persist long beyond normal men, and leave behind a legacy that spaned the ages.'
 };
 

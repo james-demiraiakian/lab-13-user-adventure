@@ -18,6 +18,7 @@ description.textContent = questData.description;
 const questChoices = document.getElementById('quest-choices');
 for (let choice of questData.choices) {
     const label = document.createElement('label');
+    label.classList.add('label');
 
     const input = document.createElement('input');
     input.type = 'radio';
@@ -43,8 +44,8 @@ questChoices.addEventListener('submit', (e) => {
 
     questScore(choice, questData.id, player);
     setChar(player);
-    // const questDetails = document.getElementById('quest-details');
-    // questDetails.classList.add('hidden');
+    const choices = document.getElementById('choose');
+    choices.classList.add('hidden');
     const questResult = document.getElementById('result');
     const resultPar = document.createElement('p');
     resultPar.textContent = choice.result;

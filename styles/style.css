@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'OptimusPrinceps';
+    src: url('../assets/OptimusPrinceps.ttf'),
+    url('../assets/OptimusPrincepsSemiBold.ttf');
+}
+
+* {
+    font-family: 'OptimusPrinceps', serif;
+}

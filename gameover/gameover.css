@@ -1,0 +1,45 @@
+body {
+    background-image: url('../assets/end.jpg');
+    color: white;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vw; 
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+}
+
+#profile {
+    display: flex;
+    font-size: 2rem;
+    width: 15vw;
+    justify-content: space-between;
+    margin-top: 12vw;
+}
+
+#class-image {
+    width: 5vw;
+}
+
+a {
+    color: white;
+}
+
+#ending-message {
+    width: 60vw;
+    text-align: center;
+    font-size: 1.2rem;
+}
